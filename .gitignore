@@ -1,0 +1,19 @@
+# IDE stuff
+.vscode/
+
+# python cache
+*.pyc
+__pycache__/
+
+dist/
+build/
+dev/
+
+.egg-info
+*.egg-info
+
+# virtual envs
+venv/
+
+# other
+README.hidden.md

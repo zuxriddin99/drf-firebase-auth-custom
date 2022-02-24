@@ -1,0 +1,27 @@
+image: python:3.9
+
+variables:
+  FIREBASE_SERVICE_ACCOUNT_KEY: /tmp/firebase.json
+
+stages:
+  - Static Analysis
+  - Test
+  # - build
+  # - publish
+
+linting:
+  stage: Static Analysis
+  image: python:3.9
+  before_script:
+    - python --version
+    - pip install pycodestyle
+  script:
+    - pycodestyle --format=pylint --exclude='*migrations/*'  drf_firebase_auth_custom/
+
+unit test:
+  stage: Test
+  script:
+    - pip install .
+    - cd testapp
+    - cat ${FIREBASE_JSON} > ${FIREBASE_SERVICE_ACCOUNT_KEY}
+    - ./manage.py test
