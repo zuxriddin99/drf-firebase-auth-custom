@@ -1,3 +1,7 @@
+# WARNING  This package not fully working only check account via username and without auto create user
+
+
+
 # DRF Firebase Auth
 
 ## Requirements
