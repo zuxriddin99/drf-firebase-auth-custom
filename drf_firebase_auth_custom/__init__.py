@@ -1,6 +1,6 @@
 """Metadata for drf-firebase-auth-custom package."""
 __title__ = 'drf-firebase-auth-custom'
-__version__ = '1.0.0'
+__version__ = '1.0.1    '
 __description__ = (
     'Custom Django Rest Framework authentication backend for '
     'parsing Firebase uid tokens and storing as local users.'

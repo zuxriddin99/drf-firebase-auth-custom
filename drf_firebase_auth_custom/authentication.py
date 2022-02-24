@@ -102,7 +102,7 @@ class FirebaseAuthentication(authentication.TokenAuthentication):
         log.info(f'_get_or_create_local_user - email: {email}')
         user = None
         try:
-            user = User.objects.get(email=email)
+            user = User.objects.get(username=email)
             log.info(
                 f'_get_or_create_local_user - user.is_active: {user.is_active}'
             )
