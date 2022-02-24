@@ -7,7 +7,7 @@ __description__ = (
 )
 __url__ = 'https://github.com/zuxriddin99/drf-firebase-auth-custom'
 __author__ = 'original author Gary Burgmann(this is custom version)'
-__author_email__ = 'zux.828@gmail.com)'
+__author_email__ = 'zux.828@gmail.com'
 __license__ = 'MIT'
 __copyright__ = 'Copyright 2021 Gary Burgmann'
 
